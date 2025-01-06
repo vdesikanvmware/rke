@@ -1,9 +1,9 @@
 #!/bin/bash
 if [ -z "$1" ]; then
   version="1.29"
-  avi_ip="10.160.143.71"
+  avi_ip="IP"
   avi_user="admin"
-  avi_password="VMware1!"
+  avi_password="Password"
   echo "===Using default version (1.29 and default AVI controller)==="
 elif [ $1 = "menu" ]; then
   echo "Enter kubernetes Version (E.g 1.29)"
