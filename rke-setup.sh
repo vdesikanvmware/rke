@@ -1,9 +1,9 @@
 #!/bin/bash
 if [ -z "$1" ]; then
   version="1.29"
-  avi_ip="IP"
-  avi_user="admin"
-  avi_password="Password"
+  avi_ip=$(echo "MTAuMTYwLjE0My43MQ==" | base64 -d)
+  avi_user=$(echo "YWRtaW4=" | base64 -d)
+  avi_password=$(echo "Vk1XYXJlMSE=" | base64 -d)
   echo "===Using default version (1.29 and default AVI controller)==="
 elif [ $1 = "menu" ]; then
   echo "Enter kubernetes Version (E.g 1.29)"
@@ -19,7 +19,6 @@ else
   echo "Usage: ./rke-setup.sh  or ./rke-setup.sh menu"
   exit
 fi
-
 
 if [ $version  = "1.28" ]; then
     export VER="v1.28.15+rke2r1"
