@@ -1,4 +1,5 @@
 **Steps:**  
+Run this script as root user
 1. git clone https://github.com/vdesikanvmware/rke.git
 2. cd rke
 3. chmod +x rke-setup.sh
